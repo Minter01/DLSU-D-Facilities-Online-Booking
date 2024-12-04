@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Status</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <div class="reservation-container">
+        <p class="status">Your reservation is <strong>pending</strong>.</p>
+        <p>We will notify you once it has been confirmed.</p>
+        <button onclick="goBack()">Back to Dashboard</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'dashboard.html'; // Redirect to the dashboard page
+        }
+    </script>
+</body>
+</html>

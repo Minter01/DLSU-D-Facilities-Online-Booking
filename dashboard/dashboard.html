@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Facility Booking</title>
+    <link rel="stylesheet" href="dashb.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="User">
+                <!-- Logo on the left side -->
+                <div class="logo">
+                    <img src="user icon.png" alt="Logo" />
+                </div>
+    
+                <!-- Name and Student role -->
+                <div class="user-details">
+                    <span class="Name">Name</span>
+                    <span class="Student">Student</span>
+                </div>
+    
+                <!-- Language dropdown on the right -->
+                <div class="language-select">
+                    <select class="language-dropdown">
+                        <option value="en">ENGLISH</option>
+                        <option value="es">SPANISH</option>
+                        <option value="fr">FRENCH</option>
+                        <option value="bi">BISAYA</option>
+                        <option value="ilo">ILOKANO</option>
+                        <option value="wr">WARAY</option>
+                        <option value="jp">JAPANESE</option>
+                        <option value="kr">KOREAN</option>
+                        <option value="cn">CHINESE</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Green separator line at the bottom of the header -->
+        <hr class="separator">
+        <div class="quote1">
+            Your Space, Your Schedule
+        </div>
+        <div class="dashboard-label">
+            DASHBOARD
+        </div>
+    </div>
+
+    <div class="live-status-container">
+        <!-- Live Status Box -->
+        <div class="live-status-box">
+            <h2>Live Status</h2>
+            <p class="quote2">"See what’s reserved, see what’s free"</p>
+            <div class="status-item">
+                <span class="facility-name">Ugnayang La Salle</span>
+                <span class="event-time">10/12/2024 8:00am - 12:00pm</span>
+            </div>
+            <div class="status-item">
+                <span class="facility-name">MTH Court</span>
+                <span class="event-time">15/12/2024 1:00pm - 2:30pm</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="facility-overview">
+        <h2 class="available-facilities-title">Available Facilities</h2>
+
+        <!-- Quote Below Available Facilities -->
+        <p class="quote">"Effortlessly reserve university facilities with just a few clicks."</p>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <button onclick="filterFacilities('all')">All</button>
+            <button onclick="filterFacilities('events')">Events</button>
+            <button onclick="filterFacilities('sports')">Sports</button>
+            <button onclick="filterFacilities('meetings')">Meetings</button>
+        </div>
+
+        <div class="facility-list" id="facilities">
+            <!-- Ugnayang La Salle -->
+            <div class="facility-card" data-category="events sports">
+                <img src="uls.jpg" alt="Ugnayang La Salle">
+                <h3>Ugnayang La Salle</h3>
+                <p class = "facility1"> A spacious venue for large events and activities.</p>
+                <a href="ugnayang_la_salle_detail.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- MTH Court -->
+            <div class="facility-card" data-category="events sports">
+                <img src="mth_court.jpg" alt="MTH Court">
+                <h3>MTH Court</h3>
+                <p class = "facility2">For sports and events.</p>
+                <a href="mth_court.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- Grand Stand -->
+            <div class="facility-card" data-category="events">
+                <img src="grandstand.jpg" alt="Grand Stand">
+                <h3>Grand Stand</h3>
+                <p class = "facility3">For activities, events and concert.</p>
+                <a href="grandstand.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- RCC Chapel Hall -->
+            <div class="facility-card" data-category="meetings">
+                <img src="rcc_chapel_hall.jpg" alt="RCC Chapel Hall">
+                <h3>RCC Chapel Hall</h3>
+                <p class = "facility4">Suitable for meetings, conferences, spiritual activities, and similar events.</p>
+                <a href="rcc_chapel.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- Swimming Pool -->
+            <div class="facility-card" data-category="sports">
+                <img src="swimming_pool.jpg" alt="Swimming Pool">
+                <h3>Swimming Pool</h3>
+                <p class = "facility5">Olympic-sized pool used for swimming competitions.</p>
+                <a href="swimming_pool.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- RCC Corporate Hall -->
+            <div class="facility-card" data-category="meetings">
+                <img src="rcc_corporate_hall.jpg" alt="RCC Corporate Hall">
+                <h3>RCC Corporate Hall</h3>
+                <p class = "facility6">Accommodates various setups for meetings and conferences.</p>
+                <a href="rcc_corporate.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+            <!-- Track Oval -->
+            <div class="facility-card" data-category="sports">
+                <img src="track_oval.jpg" alt="Track Oval">
+                <h3>Track Oval</h3>
+                <p class = "facility7">Olympic size oval, with seven lanes and eight poles.</p>
+                <a href="track_oval.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+            
+            <!-- Football field -->
+            <div class="facility-card" data-category="sports">
+                <img src="football_field.jpg" alt="Football Field">
+                <h3>Football Field</h3>
+                <p class = "facility8">For football practice, mass demos and other civic/cultural events.</p>
+                <a href="field.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+
+
+            <!-- RCC Assembly Hall -->
+            <div class="facility-card" data-category="meetings">
+                <img src="rcc_assembly_hall.jpg" alt="RCC Assembly Hall">
+                <h3>RCC Assembly Hall</h3>
+                <p class = "facility9">Perfect for classroom and conference setups.</p>
+                <a href="rcc_assembly.html">
+                    <button>BOOK NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <img src="dlsud-logo.png" alt="Logo" class="footer-logo">
+        <span class="footer-label">De La Salle University - Dasmariñas</span>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="dash_lang.js"></script> 
+
+    <script>
+        function filterFacilities(category) {
+            const facilities = document.querySelectorAll('.facility-card');
+            facilities.forEach(facility => {
+                if (category === 'all' || facility.dataset.category.includes(category)) {
+                    facility.style.display = 'block';
+                } else {
+                    facility.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

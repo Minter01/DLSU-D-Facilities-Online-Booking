@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Space out logo, name, and dropdown */
+    align-items: center;
+    width: 100%;
+    padding-top: 0.4in;  /* 1-inch gap from the top for the header content */
+    position: relative; /* Keep header in place */
+    padding-left: 1in;  /* 1-inch gap from the left side of the page */
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 50px;  /* Size of the logo */
+    height: 50px;
+    margin-right: 10px;  /* Reduced space between logo and user details */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;  /* Reduced space between name and student */
+}
+
+.Name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #103713;
+}
+
+.Student {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.language-select {
+    margin-left: auto;  /* Push the dropdown to the right */
+    background-color: #AEC3B0;  /* Green background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 1.9in;  /* Move the dropdown 50px away from the right edge */
+}
+
+.language-dropdown {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.separator {
+    border: 0;
+    border-top: 2px solid grey;  /* Green separator line */
+    width: 90%;  /* Center the separator */
+    margin: 10px auto;  /* Center the separator and add a gap from the top */
+}
+
+.dashboard-label {
+    font-size: 39px;
+    font-weight: bold;
+    color: black;  /* Text color */
+    background-color:#FFFF;  /* Green background */
+    padding: 10px 20px;  /* Adjusted padding to fit text */
+    border-radius: 10px;  /* Slight curve on the corners */
+    display: inline-block;  /* Ensures box only fits the text */
+    margin-top: 20px;  /* Gap from the quote or content above */
+    margin-left: 1in;  /* 1-inch gap from the left side */
+    max-width: fit-content;  /* Ensures the box does not extend beyond the text width */
+}
+/* Live Status Box */
+.live-status-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.live-status-box {
+    background-color: #AEC3B0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.live-status-box h2 {
+    text-align: center;
+    color: #103713;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Quote Below Live Status */
+.quote1 {
+    width: 511px;
+    height: 48px;
+    margin: 44px auto 50px;  /* Centers the element horizontally */
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    display: flex;  /* Enable Flexbox */
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;  /* Vertically centers the content */
+    text-align: center;  /* Ensures the text inside is centered */
+}
+
+.quote2 {
+    font-size: 18px;
+    color: #103713;
+    font-style: italic;
+    text-align: center;
+    padding: 2px;
+}
+
+/* Status Item Style */
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.facility-name {
+    font-size: 16px;
+    color: #103713;
+    font-weight: bold;
+    width: 50%;
+}
+
+.event-time {
+    font-size: 14px;
+    color: #628B35;
+    text-align: right;
+    width: 50%;
+}
+/* Available Facilities Section */
+.facility-overview {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 1in;  /* Move the section 1 inch from the left side */
+}
+
+/* Title Styling */
+.available-facilities-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #103713;
+    margin-bottom: 10px;
+}
+
+/* Quote Below the Title */
+.quote {
+    font-size: 18px;
+    color: #628B35;
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 1in;  /* Move the quote 1 inch from the left side */
+}
+/* Category Buttons */
+.category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Added top margin for spacing */
+}
+
+.category-buttons button {
+    padding: 10px 20px;
+    margin: 0 15px; /* Added margin for spacing between buttons */
+    background-color: #375534; /* Updated background color */
+    color: white; /* Updated text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #AEC3B0; /* Slightly darker shade for hover effect */
+}
+
+
+/* Facility List Styling */
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout by default */
+    gap: 10px;
+    justify-items: center;
+    padding: 15px;
+    width: 100%;  
+    max-width: 95%; 
+    height: auto; 
+    border-radius:40px;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+/* Facility Card Styling */
+.facility-card {    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;  
+    height: auto; 
+    border-radius: 20px;
+}
+
+/* Facility Card Image Styling */
+.facility-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+/* Facility Card Title and Description */
+.facility-card h3 {
+    color: #103713;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.facility-card p {
+    font-size: 14px;
+    color: #5e5e5e;
+    margin-bottom: 15px;
+}
+
+/* Book Now Button Styling */
+.facility-card button {
+    font-weight: bold;
+    background-color: #628B35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.facility-card button .a {
+    font-weight: bold;  
+    text-decoration: none; 
+}
+.facility-card button:hover {
+    background-color: #103713;
+}
+
+/* Media Query for Mobile Devices (screen width less than 768px) */
+@media (max-width: 768px) {
+    .facility-list {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px;
+
+    .quote {
+        margin-left: 0.5in; 
+    }
+}
+}
+
+/* Media Query for Smaller Mobile Devices (screen width less than 480px) */
+@media (max-width: 480px) {
+    .facility-list {
+        grid-template-columns: 1fr; /* Switch to 1 column on very small screens */
+        gap: 6px;
+    }
+
+    .quote {
+        margin-left: 0.25in; /* Adjust left margin further for very small screens */
+    }
+}
+.footer-container {
+    margin-top: 1in; 
+    background-color:  #0f2a1d;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    height: 150px;  
+    position: relative; 
+    text-align: center; 
+}
+
+.footer-logo {
+    width: 80px;  
+    height: auto;
+    position: absolute; 
+    top: -40px;
+    left: 50%;  
+    transform: translateX(-50%);  
+    text-align: center;
+}
+
+.footer-label {
+    color: white;  
+    font-size: 18px;  
+    text-transform: uppercase;  
+    margin-top: 20px;
+    text-align: center;
+}

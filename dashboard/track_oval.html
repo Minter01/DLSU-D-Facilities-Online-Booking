@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Oval Booking</title>
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Room Details Section (Left Side) -->
+    <div class="room-details">
+      <div class="language-dropdown">
+        <label for="language-select" data-lang="language-dropdown">Choose your language:</label>
+        <select id="language-select" onchange="changeLanguage()">
+          <option value="en">ENGLISH</option>
+          <option value="es">SPANISH</option>
+          <option value="fr">FRENCH</option>
+          <option value="bi">BISAYA</option>
+          <option value="ilo">ILOKANO</option>
+          <option value="wr">WARAY</option>
+          <option value="jp">JAPANESE</option>
+          <option value="kr">KOREAN</option>
+          <option value="cn">CHINESE</option>
+        </select>
+      </div>
+
+      <h1 data-lang="facility-name-9">Track Oval </h1>
+
+      <img src="track_oval.jpg" alt="Track Oval  Venue" class="room-image">
+      <p data-lang="facility-description-9">Situated near Ugnayang La Salle, the track oval is available for use by the University’s students and personnel for exercise and training. The football field also provides a location for student athletes to train during the weekdays.</p>
+      <p><strong data-lang="facility-capacity-1">Capacity:</strong> <span data-lang="facility-capacity-value-9">Up to 500 people</span></p>
+      <div class="tags">
+        <span data-lang="oval-tag1">Sports</span>
+        <span data-lang="oval-tag2">Training </span>
+        <span data-lang="oval-tag3">Physical Education</span>
+      </div>
+
+      <div class="event-details">
+        <h2 data-lang="event-details-title">Event Details</h2>
+        
+        <div class="input-group">
+          <label for="event-name" data-lang="event-name-label">Event Name</label>
+          <input type="text" id="event-name" placeholder="Enter Event Name">  
+        </div>
+        
+        <div class="input-group">
+          <label for="attendees" data-lang="attendees-label">Number of Attendees</label>
+          <input type="number" id="attendees" placeholder="Enter Number of Attendees" min="1">
+        </div>
+      </div>
+    </div>
+
+    <!-- Combined Calendar Section (Right Side) -->
+    <div class="calendar-container">
+      <h2 data-lang="pick-date-time">Pick a Date and Time</h2>
+      
+      <div class="calendar-navigation">
+        <button id="prevMonth" onclick="changeMonth(-1)">&#60;</button>
+        <h3 id="monthYear"></h3>
+        <button id="nextMonth" onclick="changeMonth(1)">&#62;</button>
+      </div>
+      
+      <div class="calendar-grid" id="calendar-grid">
+        <!-- Dates will be dynamically populated -->
+      </div>
+      
+      <div class="reservation-options">
+        <div class="options-row">
+          <div class="option" onclick="selectReservation('Morning')">
+            <h3 data-lang="morning">Morning</h3>
+            <p>7 AM - 12 PM</p>
+          </div>
+          <div class="option" onclick="selectReservation('Afternoon')">
+            <h3 data-lang="afternoon">Afternoon</h3>
+            <p>1 PM - 5 PM</p>
+          </div>
+        </div>
+        <div class="options-row">
+          <div class="option" onclick="selectReservation('Regular Hours')">
+            <h3 data-lang="regular-hours">Regular Hours</h3>
+            <p>7 AM - 5 PM</p>
+          </div>
+          <div class="option" onclick="selectReservation('Late Hours')">
+            <h3 data-lang="late-hours">Late Hours</h3>
+            <p>1 PM - 8 PM</p>
+          </div>
+        </div>
+        <div class="options-row">
+          <div class="option" onclick="selectReservation('Evening')">
+            <h3 data-lang="evening">Evening</h3>
+            <p>5 PM - 8 PM</p>
+          </div>
+          <div class="option" onclick="selectReservation('Wholeday')">
+            <h3 data-lang="wholeday">Wholeday</h3>
+            <p>7 AM - 8 PM</p>
+          </div>
+        </div>
+
+        <button class="schedule-btn" onclick="scheduleEvent()" data-lang="schedule-btn">Schedule Event</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calendar and language Script -->
+  <script src="detail.js" defer></script>
+  <script src="language.js"></script>
+</body>
+</html>

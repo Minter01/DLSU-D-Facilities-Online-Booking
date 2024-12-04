@@ -1,0 +1,58 @@
+      "facility-name-2": "Football Field",
+      "facility-description-2": "The DLSU-D Football Field serves as a premier venue for football practice, mass demonstrations, and various civic and cultural events. Its expansive and well-maintained grounds provide the perfect setting for athletic training and large-scale gatherings.",
+      "facility-capacity-value-2": "Up to 400 people",
+      "field-tag1": "Sports",
+      "field-tag2": "Concerts",
+      "field-tag3": "Student Activities",
+      "field-tag4":"Cultural Events",
+
+      "facility-name-3": "Grandstand",
+      "facility-description-3": "The DLSU-D Grandstand provides a place for audiences to watch sporting events as they happen. It also occasionally used as a venue for alternative classes when faculty and students opt to go outdoors for a different learning atmosphere.",
+      "facility-capacity-value-3": "Up to 400 people",
+      "grand-tag1": "Events",
+      "grand-tag2": "Concerts",
+      "grand-tag3": "Student Activities",
+
+      "facility-name-4": "Mth Court",
+      "facility-description-4": "The MTH Court is a versatile venue designed for sports and events, offering a spacious and dynamic space perfect for athletic activities, tournaments, and special gatherings.",
+      "facility-capacity-value-4": "Up to 500 people",
+      "mth-tag1": "Sports",
+      "mth-tag2": "Events",
+
+
+      "facility-name-5": "RCC Assembly Hall",
+      "facility-description-5": "The RCC Assembly Hall is a flexible venue that can host up to 60 guests in a classroom setup, 50 in a conference setup with tables, and 40 for recollection activities. It features air conditioning, a glassboard, and a wide screen, ensuring a comfortable and functional space for various gatherings.",
+      "facility-capacity-value-5": "Up to 60 people",
+      "ass-tag1": "Spiritual Activities",
+      "ass-tag2": "Conferences",
+
+      "facility-name-6": "RCC Chapel Hall",
+      "facility-description-6": "The RCC Chapel offers a serene and sacred space for meetings, conferences, spiritual activities, and moments of reflection. Designed to inspire faith and foster a sense of community, this venue is perfect for gatherings that seek to nurture the spirit and strengthen connections.",
+      "facility-capacity-value-6": "Up to 100 people",
+      "chap-tag1": "Spiritual Activities",
+      "chap-tag2": "Conferences",
+
+
+      "facility-name-7": "RCC Corporate Hall",
+      "facility-description-7": "The RCC Corporate Hall is a versatile and comfortable venue, accommodating up to 60 guests in a classroom setup, 50 in a conference setup with tables, and 40 for recollections. Fully equipped with air conditioning, a glassboard, and a wide screen, it’s an ideal space for professional and spiritual gatherings alike.",
+      "facility-capacity-value-7": "Up to 60 people",
+      "corp-tag1": "Classroom",
+      "corp-tag2": "Conferences",
+
+      "facility-name-8": "Swimming Pool",
+      "facility-description-8": "The University invested in an Olympic-sized Pool to serve as the venue for students' Physical Education classes and certificate programs for swimming. A fine resort impression, surrounded with the usual, nature orientation, the pool has concrete, covered bleachers on the left and on the other, 12 wide shower areas and 52 dressing cubicles.",
+      "facility-capacity-value-8": "Up to 25 people",
+      "swim-tag1": "Sports",
+      "swim-tag2": "Olympic-sized",
+      "swim-tag3": "Physical Education",
+
+      "facility-name-9": "Track oval",
+      "facility-description-8": "Situated near Ugnayang La Salle, the track oval is available for use by the University’s students and personnel for exercise and training. The football field also provides a location for student athletes to train during the weekdays.",
+      "facility-capacity-value-8": "Up to 500 people",
+      "chap-tag1": "Sports",
+      "chap-tag2": "Training",
+      "chap-tag3": "Physical Education",
+
+
+
+
